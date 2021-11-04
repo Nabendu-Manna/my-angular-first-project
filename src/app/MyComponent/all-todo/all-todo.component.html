@@ -1,0 +1,10 @@
+<p>All todo </p>
+
+<div class="row">
+  <p class="col-12">Todo list</p>
+  <ng-container *ngFor="let todo of todos">
+    <div class="col-4" *ngIf="todo.status">
+      <app-todo-item [todo]="todo"></app-todo-item>
+    </div>
+  </ng-container>
+</div>

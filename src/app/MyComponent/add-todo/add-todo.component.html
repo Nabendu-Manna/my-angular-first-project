@@ -1,0 +1,7 @@
+<p>Add new todo</p>
+
+<form (ngSubmit)="onSubmit()">
+  <label>Title: </label><input type="text" class="form-control" name="title" [(ngModel)]="title">
+  <label>Time: </label><input type="number" class="form-control" name="time" [(ngModel)]="time">
+  <input type="submit" value="Add" class="btn f-btn-sm btn-success">
+</form>

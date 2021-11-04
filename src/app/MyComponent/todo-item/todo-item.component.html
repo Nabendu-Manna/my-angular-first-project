@@ -1,0 +1,7 @@
+<div class="m-5">
+  <p>ID -> {{ todo.no }} </p>
+  <p>Title -> {{ todo.title }}</p>
+  <p>Time -> {{ todo.time }}</p>
+  <input type="number" [(ngModel)]="todo.time" class="form-control">
+  <button (click)="deleteItem(false)" class="btn btn-primary"> Delete </button>
+</div>
