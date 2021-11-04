@@ -32,8 +32,6 @@ export class TodoComponent implements OnInit {
 
     ];
 
-    console.log("hi");
-
     localStorage.setItem("todos", JSON.stringify(JSONDatas));
 
     let todoa: any;
