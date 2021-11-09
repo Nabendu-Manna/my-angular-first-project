@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Todo} from '../../Todo';
 // import {Todo} from '../../Todo';
 import {NgbConfig} from '@ng-bootstrap/ng-bootstrap';
+import { MydataService } from 'src/app/services/mydata.service';
 
 @Component({
   selector: 'app-todo',
@@ -10,7 +11,8 @@ import {NgbConfig} from '@ng-bootstrap/ng-bootstrap';
 })
 export class TodoComponent implements OnInit {
   todos: Todo[];
-  constructor() {
+  
+  constructor(private mydataService: MydataService) {
 
     let JSONDatas: Todo[] = [
       {
@@ -70,5 +72,9 @@ export class TodoComponent implements OnInit {
     this.todos.push(todo);
     console.log("---  add todo---");
   }
+
+  // myData() {
+  //   mydataService.set
+  // }
 
 }
